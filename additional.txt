@@ -1,0 +1,8 @@
+Vagrant:
+vagrant ssh
+cd /vagrant
+source ~/virtual-env/bin/activate
+cd profiles_project
+
+python manage.py runserver 0.0.0.0:8000
+open this http://127.0.0.1:8000/ in the browser

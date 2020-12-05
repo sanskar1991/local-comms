@@ -1,4 +1,5 @@
 Vagrant:
+vagrant up: run the VM
 vagrant ssh
 cd /vagrant
 source ~/virtual-env/bin/activate
@@ -6,3 +7,35 @@ cd profiles_project
 
 python manage.py runserver 0.0.0.0:8000
 open this http://127.0.0.1:8000/ in the browser
+
+"""
+Django's default user class uses username and password for login.
+But if you want to use email instead of username then you have to customize the user class.
+You have to use AbstractBaseUser and PermissionsMixin to override or customize the user class.
+"""
+
+"""
+Model manager: we want to use our custom user model with the Django CLI
+because django CLI needs a manager to manage the custom users
+"""
+
+"""
+is_active: wether the user profile is active or not
+is_staff: wether the user is a staff member or not
+"""
+
+"""
+USERNAME_FIELD and REQUIRED_FIELDS are in-built keywords
+"""
+
+"""
+BaseUserManager is a django class which we inherit to modify or create custom UserManager
+"""
+
+"""
+normalize_email: in-built function which makes email address case insensitive
+"""
+
+"""
+user.save(using=self._db): it is for every database
+"""

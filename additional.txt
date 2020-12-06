@@ -53,3 +53,9 @@ easily convert data inputs into Python objects and vice versa.
 It's kind of similar to a django form which you define 
 and it has the various fields that you want to accept for the input for your api
 """
+
+"""
+a_viewset:  'Uses actions (list, create, retrieve, update, partial_update)',
+            'Automatically maps to URLS using Routers',
+            'Provides more functionality with less code'
+"""

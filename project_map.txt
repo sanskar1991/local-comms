@@ -23,3 +23,26 @@ APIs:
     := [PUT]: update a profile
     := [PATCH]: partially update a profile
     := [DELETE]: remove a profile
+
+PROFILE FEED API FUNCTIONALITIES:
+1. Creating new feed items
+    := Only for logged in users
+
+2. Updating feed items
+    := Only for logged in users
+
+3. Deleting items
+    := Only for logged in users
+
+4. Viewing other users profile
+    := All users
+
+APIs:
+1. api/feed/
+    := [GET]: list all the feed items
+    := [POST]: create feed items
+
+2. api/feed/<feed_item_id>/
+    := [PUT]: update a specific feed items
+    := [PATCH]: partially update a specific feed items
+    := [DELETE]: delete a specific feed items

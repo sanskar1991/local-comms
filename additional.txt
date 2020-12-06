@@ -105,4 +105,8 @@ ObtainAuthToken: a class offered by django rest framework which generates token(
 these token then includes in the header whenever user logins
 """
 
+"""
+perform_create: a function which automatically called whenever there is a post request made
+it takes serializer as an argument and then extracts the user from request to save it
+"""
 

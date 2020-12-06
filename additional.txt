@@ -39,3 +39,17 @@ normalize_email: in-built function which makes email address case insensitive
 """
 user.save(using=self._db): it is for every database
 """
+
+"""
+an_apiview: 'Uses HTTP methods as functions (get, post, patch, put, delete)',
+            'Is similar to a traditional Django View',
+            'Gives you the most control over your logic',
+            'Is mapped manually to URLs'
+"""
+
+"""
+Serializer is a feature from the Django rest framework that allows you to 
+easily convert data inputs into Python objects and vice versa.
+It's kind of similar to a django form which you define 
+and it has the various fields that you want to accept for the input for your api
+"""

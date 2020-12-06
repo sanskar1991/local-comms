@@ -6,9 +6,9 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register('hello-viewset', views.HelloViewSets, basename='hello-viewset')
+# router.register('hello-viewset', views.HelloViewSets, basename='hello-viewset')
+router.register('profile', views.UserProfileViewSets)
 
 urlpatterns = [
-    path('hello-world/', views.HelloAPI.as_view()),
     path('', include(router.urls))
 ]

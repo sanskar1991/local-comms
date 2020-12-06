@@ -34,6 +34,7 @@ BaseUserManager is a django class which we inherit to modify or create custom Us
 
 """
 normalize_email: in-built function which makes email address case insensitive
+set_password(): automatically encrypt the password in to a hash value
 """
 
 """
@@ -59,3 +60,45 @@ a_viewset:  'Uses actions (list, create, retrieve, update, partial_update)',
             'Automatically maps to URLS using Routers',
             'Provides more functionality with less code'
 """
+
+"""
+ModelSerializer: it uses a meta class to point to a specific model
+password: exceptional field because we want to give this field only when user is creating a profile
+otherwise user can access the hash value of the password.
+So, we have to make it write-only and style for displaying dots or stars instead of password user types
+"""
+
+"""
+ModelSerializer: uses default create function to create user 
+so to override that function by custom user function we need to define create function and points the user
+to create_user fuction and return the user created by it
+"""
+
+"""
+update: ModelSerializer uses update function as default function to update any data
+it is okay to pass email and name in this field but we cannot pass password directly without encrypting it.
+So, to do that we need to delete the password if it exist in the validated_data and the set again by using
+set_password() function as it automatically stores the password in hash valuse
+"""
+
+"""
+super().update() to pass the values to the existing DRF update() method, to handle updating the remaining fields.
+"""
+
+"""
+ModelViewSet: extension of the ViewSet 
+Just have to specify a serializer_class and a queryset to perform all the CRUD operations of the ViewSet 
+"""
+
+"""
+If we are using queryset in our view then there is no need to define basename in urls
+"""
+
+"""
+BasePermission: it is a class which we use for customizing the permissions of a user
+Everytime when request is made Django checks has_object_permission.
+It passes the request, the view which was called and the object for which we have to check against
+"""
+
+
+

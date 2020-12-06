@@ -1,0 +1,25 @@
+FUNCTIONALITY:
+1. Create new profile
+    := Handle registration of new user
+    := Validate profile data
+
+2. Listing existing profile
+    := Search for profiles
+    := Email and name criteria
+
+3. View specific profile
+    := By profile ID
+
+4. Update profile or logged in user
+    := Change name, email and password
+
+APIs:
+1. api/profiles/
+    := [GET]: list all profiles
+    := [POST]: create new profile
+
+2. api/profiles/<profile_id>/
+    := [RETRIEVE]: retrieve a single profile
+    := [PUT]: update a profile
+    := [PATCH]: partially update a profile
+    := [DELETE]: remove a profile

@@ -100,5 +100,9 @@ Everytime when request is made Django checks has_object_permission.
 It passes the request, the view which was called and the object for which we have to check against
 """
 
+"""
+ObtainAuthToken: a class offered by django rest framework which generates token(random strings)
+these token then includes in the header whenever user logins
+"""
 
 
